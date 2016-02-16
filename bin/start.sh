@@ -278,7 +278,7 @@ set_property "guacd-port"     "$GUACD_PORT_4822_TCP_PORT"
 #
 
 # Only one auth provider may be used
-if [ -n "$MYSQL_DATABASE" -a -n "$POSTGRES_DATABASE" -a -n "$NOAUTH"]; then
+if [ -n "$MYSQL_DATABASE" -a -n "$POSTGRES_DATABASE" -a -n "$NOAUTH" ]; then
     cat <<END
 FATAL: More than one auth provider specified (MySQL, PostgreSQL, or NoAuth)
 -------------------------------------------------------------------------------
